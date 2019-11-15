@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<style type="text/css">
+		#Center{
+		margin-top: 180px;
+		margin-left: 500px;
+		position: relative;              
+		}
+	
+	</style>
+	
+
+    <title>Cadastro</title>
+  </head>
+  <body style="background-color:#C4F7FF">
+		
+		<form action="valida_cadastro.php" method="post">
+		
+		<div id="Center">
+			<div class="form-group row">
+				<label for="lemail" class="col-sm-1 col-form-label">Email</label>
+				<div class="col-5">
+				  <input name="email" type="email" class="form-control" placeholder="Email (Obrigatório)" required>
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="lconfirmaemail" class="col-sm-1 col-form-label">Confirme o Email</label>
+				<div class="col-5 mt-2">
+				  <input name="confirmaemail" type="email" class="form-control" placeholder="Digite o endereço de email novamente (Obrigatório)" required>
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="luser" class="col-sm-1 col-form-label md-3">Username</label>
+				<div class="col-5 md-3">
+				  <input name="username" type="text" class="form-control" placeholder="Username (Obrigatório)" required>
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="lsenha" class="col-sm-1 col-form-label mt-2">Senha</label>
+				<div class="col-5 mt-2">
+				  <input name="senha" type="password" class="form-control" placeholder="Password (Obrigatório)" required>
+				</div>
+			</div>
+			  <fieldset class="form-group">
+			<div class="row">
+				  <legend class="col-form-label col-sm-1 pt-0">Sexo</legend>
+				  <div class="col-sm-10">
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="sexo" id="gridRadios1" value="0" checked>
+					  <label class="form-check-label" for="gridRadios1">
+						Masculino
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="sexo" id="gridRadios2" value="1">
+					  <label class="form-check-label" for="gridRadios2">
+						Feminino
+					  </label>
+					</div>
+				  </div>
+			</div>
+			  </fieldset>
+			
+			  <div class="form-group row">
+				<div class="col-sm-10">
+				  <button style="margin-left:200px; margin-right: 8px;" type="submit" class="btn btn-success">Cadastre-se</button>
+				  <a class="btn btn-danger" href="index.html" target="_self"" role="button">Cancelar</a>
+				</div>
+			  </div>
+		</div>
+		</form>
+	
+  </body>
+</html>
