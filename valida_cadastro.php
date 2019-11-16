@@ -1,4 +1,5 @@
 <?php
+#teste
 include("includes/conexao.php");
 $email = $_POST['email'];
 $confirmaemail = $_POST['confirmaemail'];
