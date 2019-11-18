@@ -48,7 +48,7 @@
 			<div class="form-group row">
 				<label for="lsenha" class="col-sm-1 col-form-label mt-2">Senha</label>
 				<div class="col-5 mt-2">
-				  <input name="senha" type="password" class="form-control" placeholder="Password (Obrigatório)" required>
+				  <input name="senha" type="password" pattern=".{3,}" title="Minimo de 6 caracteres" class="form-control" placeholder="Password (Obrigatório)" required>
 				</div>
 			</div>
 			  <fieldset class="form-group">
@@ -79,6 +79,29 @@
 			  </div>
 		</div>
 		</form>
-	
   </body>
+    <script type="text/javascript">
+	loadErros();
+	function loadErros()
+	{
+	    debugger;
+		var url_string = window.location.href;
+		var url = new URL(url_string);
+		var email = url.searchParams.get("email");
+		var sql = url.searchParams.get("sql");
+		var existe = url.searchParams.get("existe");
+		if(existe == "true")
+		{
+		    alert('O username ou email já existem na base!');
+		}
+		if(email == "true")
+		{
+			alert('Favor equalizar os emails');
+		}
+		else if(sql == "true")
+		{
+			alert('Ocorreu um erro ao salvar seus dados, favor verificar as informações!')
+		}
+	}
+  </script>
 </html>

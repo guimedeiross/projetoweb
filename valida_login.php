@@ -1,4 +1,5 @@
 <?php
+include("includes/conexao.php"); 
 $usuario = $_POST['username'];
 $senha = $_POST['senha'];
 

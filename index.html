@@ -7,10 +7,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<style type="text/css">
-		#Center{
-		margin-top: 180px;
-		margin-left: 730px;
-		position: absolute;              
+		#center{
+		margin-top: 15%;
+		margin-left: 45%;
 		}
 	
 	</style>
@@ -18,15 +17,17 @@
     <title>Login</title>
   </head>
   <body style="background-color:#C4F7FF;">
-	<div id="Center">
+	<div id="center">
 		<form action="valida_login.php" method="post">
-			<label for="lusername">Username</label>
-			<input name="username" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter username">
-			<label for="lpassword">Senha</label>
-			<input name="senha" type="password" class="form-control" placeholder="Senha">
-			</br>
-			<button style="margin-left:8px; margin-right: 8px;" type="submit" class="btn btn-primary">Log in</button>
-			<a class="btn btn-success" href="cadastro_usuario.html" target="_blank"" role="button">Cadastre-se</a>
+			<div class="col-sm-5">
+				<label for="lusername">Username</label>
+				<input name="username" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter username">
+				<label for="lpassword">Senha</label>
+				<input name="senha" type="password" class="form-control" placeholder="Senha">
+				<br/>
+				<button type="submit" class="btn btn-primary">Log in</button>
+				<a class="btn btn-success" href="cadastro_usuario.html" target="_blank" role="button">Cadastre-se</a>
+			</div>
 		</form>
 	</div>
   </body>
