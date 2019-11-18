@@ -1,5 +1,5 @@
 <?php
-include("includes/conexao.php"); 
+include("includes/conexao.php");
 $email = $_POST['email'];
 $confirmaemail = $_POST['confirmaemail'];
 $usuario = $_POST['username'];
