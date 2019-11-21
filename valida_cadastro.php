@@ -50,5 +50,9 @@ function validaNomeExistente($email, $usuario, $serv)
 	{
 		return false;
 	}	
+	else
+	{
+		return true;
+	}
 }
 ?>
