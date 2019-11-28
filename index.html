@@ -13,7 +13,6 @@
 		}
 	
 	</style>
-
     <title>Login</title>
   </head>
   <body style="background-color:#C4F7FF;">
@@ -24,11 +23,20 @@
 				<input name="username" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter username">
 				<label for="lpassword">Senha</label>
 				<input name="senha" type="password" class="form-control" placeholder="Senha">
-				<br/>
+				</br>
 				<button type="submit" class="btn btn-primary">Log in</button>
-				<a class="btn btn-success" href="cadastro_usuario.html" target="_blank" role="button">Cadastre-se</a>
+				<a class="btn btn-success" href="cadastro_usuario.html" target="_blank"" role="button">Cadastre-se</a>
 			</div>
 		</form>
 	</div>
   </body>
+  <script type="text/javascript">
+	loadErros();
+	function loadErros()
+	{
+		var url_string = window.location.href; //window.location.href
+		var url = new URL(url_string);
+		var c = url.searchParams.get("c");
+	}
+  </script>
 </html>

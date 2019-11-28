@@ -7,4 +7,5 @@ $banco = "id11511078_web";
 $serv = mysqli_connect($host, $user, $pass,$banco) 
         or 
 		die("Impossível conectar-se ao servidor :".$host); 
-?> 
+		
+?>

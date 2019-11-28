@@ -16,18 +16,21 @@ function criptografa_senha($senha) {
 	
 	else{
 		
-		$sqlValida = "SELECT username,senha FROM usuario WHERE username = '$usuario' && senha = '$cripto'";
+		$sqlValida = "SELECT username,senha, id FROM usuario WHERE username = '$usuario' && senha = '$cripto'";
 		$query = mysqli_query($serv , $sqlValida); 
 		$row = mysqli_fetch_assoc($query);
 		
 		if($row['username'] == $usuario && $row['senha'] == $cripto)
 		{
-			echo "Entrou";
+			session_start();
+			$_SESSION['userId'] = $row['id'];
+			$_SESSION['username'] = $row['username'];
+			header("Location: tela_principal.php");
 		}	
 		else
 		{
-			echo "Acesso errado";
+			$errosUrl = $errosUrl."sqlValida=true";
+			header("Location: index.html".$errosUrl);
 		}
 	}
-
 ?>

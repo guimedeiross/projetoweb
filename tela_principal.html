@@ -1,0 +1,86 @@
+<?php
+echo"
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+		}
+		
+		td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+		}
+		
+		tr:nth-child(even) {
+		background-color: #dddddd;
+		}
+		h4{
+		align: center;
+		}
+	</style>
+    <title>Login</title>
+  </head>
+  <body style="background-color:#C4F7FF;">
+	<div class="col-sm-12" id="header">
+		<h4><strong>Guilherme Medeiros<strong></h4>
+	</div>
+	<div class="col-sm-12">
+		<button type="submit" class="btn btn-success">Adicionar Movimentação</button>
+		<button type="submit" class="btn btn-danger">Parâmetros</button>
+	</div>
+	<div class="col-sm-12">
+		<table id="movimentacaoTable">
+			<tr>
+				<th>Tipo</td>
+				<th>Valor</td>
+				<th>Data</td>
+				<th></th>
+			</tr>
+			<tr>
+				<td>Gasto</td>
+				<td>150</td>
+				<td>25/10/2019</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Gasto</td>
+				<td>250</td>
+				<td>27/10/2019</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Ganho</td>
+				<td>195</td>
+				<td>27/10/2019</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Ganho</td>
+				<td>85</td>
+				<td>29/10/2019</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Gasto</td>
+				<td>110</td>
+				<td>30/10/2019</td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-sm-12">
+		<label><strong>Saldo:</strong></label><label><strong>105.25</strong></label>
+	</div>
+  </body>
+</html>
+";
+?>
